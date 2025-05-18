@@ -1,0 +1,41 @@
+/* AncientTreeScene.css */
+.ancient-tree-scene {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/fondos/6.png'); 
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-start; /* cambia de flex-end a flex-start */
+  justify-content: center;
+  padding: 4rem 2rem 2rem; /* más espacio arriba */
+  color: white;
+  text-shadow: 1px 1px 3px black;
+  z-index: 10;
+}
+
+.dialogo-box {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  max-width: 600px;
+  font-size: 1.2rem;
+}
+
+.minijuego button {
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #553311;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.minijuego button:hover {
+  background-color: #774422;
+}
+

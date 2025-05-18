@@ -1,0 +1,48 @@
+.forest-background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.layer.back {
+  background-image: url('/parallax/parallax-forest-back-trees.png');
+  animation-duration: 120s;
+  z-index: 1;
+}
+
+.layer.middle {
+  background-image: url('/parallax/parallax-forest-middle-trees.png');
+  animation-duration: 90s;
+  z-index: 2;
+}
+
+.layer.front {
+  background-image: url('/parallax/parallax-forest-front-trees.png');
+  animation-duration: 60s;
+  z-index: 3;
+}
+
+.layer.lights {
+  background-image: url('/parallax/parallax-forest-lights.png');
+  animation-duration: 50s;
+  z-index: 4;
+  opacity: 0.5;
+}
+
+.layer.ground {
+  background-image: url('/trees.png');
+  animation-duration: 20s;
+  z-index: 5;
+  bottom: 0;
+  height: auto;
+  background-position: bottom;
+}
+
+@keyframes moveBackground {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}

@@ -1,0 +1,51 @@
+.postgame-background {
+  background-image: url('/fondos/8.png');
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;  
+  height: 100%;
+  background-size: cover; /* Muestra toda la imagen sin recortarla */
+  background-repeat: no-repeat; /* Evita que se repita si sobra espacio */
+  background-position: top center; /* Centra la imagen */
+  display: flex;
+  align-items: flex-start; /* cambia de flex-end a flex-start */
+  justify-content: center;
+  padding: 4rem 2rem 2rem; /* más espacio arriba */
+  color: white;
+  text-shadow: 1px 1px 3px black;
+  z-index: 10;
+}
+
+.dialogue-box {
+  background-color: rgba(0, 0, 0, 0.6); /* fondo semitransparente para mejor lectura */
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+.dialogue-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+button {
+  align-self: center; /* centra el botón horizontalmente */
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+ background-color: #ff85a2;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #666;
+}

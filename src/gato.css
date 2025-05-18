@@ -1,0 +1,14 @@
+.gato-correr {
+  width: 32px;
+  height: 32px;
+  background-image: url('/WhiteCatIdle.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  image-rendering: pixelated; /* opcional, si es pixel art */
+  animation: correr 1s steps(6) infinite;
+}
+
+@keyframes correr {
+  from { background-position: 0 0; }
+  to { background-position: 0 -192px; } /* negativo del alto total */
+}
